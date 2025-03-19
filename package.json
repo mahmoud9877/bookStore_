@@ -2,8 +2,8 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mahmoud9877.github.io/bookStore_",
   "dependencies": {
+    "homepage": "https://mahmoud9877.github.io/bookStore_",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@reduxjs/toolkit": "^2.3.0",
     "@testing-library/jest-dom": "^5.17.0",
