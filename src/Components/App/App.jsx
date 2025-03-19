@@ -10,7 +10,7 @@ import RootLayout from "../Rootlayout/RootLayout.jsx";
 import { useUser } from "../../Context/UserContext.jsx"; // Use useUser instead of useUserContext
 import BookDetails from "../BookDetails/BookDetails.jsx";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute.jsx";
-import { createHashRouter, RouterProvider } from "react-router-dom"; // ✅ استبدال createBrowserRouter بـ createHashRouter
+import { createHashRouter, RouterProvider } from "react-router-dom"; // ✅ فقط دول اللي محتاجهم
 
 function App() {
   const { userData, setUserData } = useUser();
@@ -30,7 +30,6 @@ function App() {
   }, [setUserData]);
 
   const routers = createHashRouter([
-    // ✅ استبدال createBrowserRouter بـ createHashRouter
     {
       path: "/",
       element: <RootLayout userData={userData} />,
